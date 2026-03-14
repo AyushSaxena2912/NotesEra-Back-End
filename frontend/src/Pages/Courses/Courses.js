@@ -15,7 +15,7 @@ function Courses() {
   const [selectedCollege, setSelectedCollege] = useState(null);
   const [selectedYear, setSelectedYear] = useState(null);
   const [selectedType, setSelectedType] = useState(null);
-  const BASE_URL='https://notesera-basic-backend-d3bk.onrender.com'
+  const BASE_URL='https://notesera-back-end.onrender.com'
   const fetchColleges = async () => {
     try {
       const response = await axios.get(
