@@ -1,0 +1,31 @@
+.wrapper a:link,
+.wrapper a:visited,
+.wrapper a:hover,
+.wrapper a:active {
+  color: var(--light-color);
+}
+
+.wrapper {
+  color: var(--light-color);
+  background: rgba(238, 238, 238, 0.12);
+  backdrop-filter: blur(25.5px);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 1rem;
+}
+
+.wrapper div a img {
+  width: 8rem;
+}
+
+.wrapper li a:hover {
+  color: var(--secondary-f-color);
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    font-size: 1.2rem;
+  }
+  .wrapper div a img {
+    width: 11rem;
+  }
+}

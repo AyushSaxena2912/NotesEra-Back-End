@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800;900&display=swap");
+* {
+  font-family: "Lato";
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+:root {
+  --background-color: #1b1b1b;
+  --primary-f-color: #00a2fb;
+  --secondary-f-color: #c3c3c3;
+  --light-color: #fff;
+  --light-blue-color: #60aef0;
+  --primary-btn-color: linear-gradient(180deg, #2a6bf2 0%, #2d3794 100%);
+
+  --secondary-btn-color: linear-gradient(
+    180deg,
+    rgba(84, 36, 232, 1) 0%,
+    rgba(58, 34, 134, 1) 100%
+  );
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  background: var(--background-color);
+}
+
+.wrapper section h1 {
+  color: var(--primary-f-color);
+  text-align: center;
+}
+
+.body {
+  background: rgba(27, 27, 27, 0.4);
+  backdrop-filter: blur(75px);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: var(--secondary-f-color);
+  font-family: "Lato";
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 5rem;
+  gap: 4rem;
+}
+
+.hero img {
+  min-width: 18rem;
+  animation: bounce 5s ease-in-out infinite both;
+}
+
+.hero h1,
+.hero h2 {
+  color: var(--secondary-f-color);
+  width: fit-content;
+}
+
+.hero h1 {
+  font-size: 1.2rem;
+}
+
+.hero h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 3.75rem;
+  margin-left: -4px;
+  margin-bottom: 0.9rem;
+  text-wrap: nowrap;
+}
+
+.hero p {
+  color: var(--primary-f-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  max-width: 70%;
+}
+
+.hero p span {
+  font-weight: 800;
+}
+
+@media screen and (min-width: 992px) {
+  .hero img {
+    min-width: 26rem;
+    line-height: 4.75rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .hero h2 {
+    font-size: 5rem;
+  }
+  .hero img {
+    min-width: 24rem;
+  }
+}
+
+/* Introduction Section */
+.intro {
+  margin-top: 10rem;
+}
+
+.intro h1 {
+  color: var(--primary-f-color);
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.intro p {
+  max-width: 75%;
+  font-size: 1.1rem;
+  font-weight: 400;
+  word-spacing: 0.1rem;
+}
+
+.intro p span {
+  font-weight: 800;
+}
+
+.notes {
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notes h1 {
+  color: var(--primary-f-color);
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.notes a, .notes button {
+  margin-top: 3rem;
+}
+
+.announcement h1 {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+/* Contents Section */
+.contents {
+  margin-top: 10rem;
+}
+
+/* Subscription Section */
+.subscribe {
+  margin-bottom: 3rem;
+}
+
+/* Footer Section */
+.footer {
+  margin-top: 6rem;
+}
+
+/* Design */
+/* Ellipses */
+.ellipseContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ellipse1 {
+  display: hidden;
+  top: -2%;
+  left: -85vw;
+}
+.ellipse2 {
+  top: 2%;
+  right: -40vw;
+}
+.ellipse3 {
+  top: 3%;
+  right: 20vw;
+}
+.ellipse4 {
+  top: 21%;
+  right: 34vw;
+}
+.ellipse5 {
+  top: 35%;
+  left: -34vw;
+}
+.ellipse6 {
+  display: hidden;
+  top: 48%;
+  left: -500px;
+}
+.ellipse7 {
+  top: 53%;
+  right: -2vw;
+}
+.ellipse8 {
+  top: 60%;
+  left: 12vw;
+}
+.ellipse9 {
+  top: 68%;
+  right: -20vw;
+}
+.ellipse10 {
+  bottom: 5%;
+  left: -10vw;
+}
+.ellipse11 {
+  top: 8%;
+  right: 1500px;
+  display: hidden;
+}
+
+@media screen and (min-width: 576px) {
+  .ellipse1 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ellipse1 {
+    top: -2%;
+    left: -15vw;
+  }
+  .ellipse2 {
+    top: 1%;
+    left: 35vw;
+  }
+  .ellipse3 {
+    top: 3%;
+    right: 20vw;
+  }
+  .ellipse4 {
+    top: 21%;
+    right: 34vw;
+  }
+  .ellipse5 {
+    top: 35%;
+    right: 34vw;
+  }
+  .ellipse6 {
+    display: block;
+    top: 48%;
+    left: -4vw;
+  }
+  .ellipse7 {
+    top: 50%;
+    right: 10vw;
+  }
+  .ellipse8 {
+    display: hidden;
+    top: 60%;
+    left: -500px;
+  }
+  .ellipse9 {
+    top: 68%;
+    right: -20vw;
+  }
+  .ellipse10 {
+    bottom: 5%;
+    left: -10vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .ellipse11 {
+    display: block;
+    top: 8%;
+    right: -60vw;
+  }
+}

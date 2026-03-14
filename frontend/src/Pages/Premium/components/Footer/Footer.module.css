@@ -1,0 +1,49 @@
+.wrapper a:link,
+.wrapper a:visited,
+.wrapper a:hover,
+.wrapper a:active {
+  color: var(--light-color);
+}
+
+.wrapper {
+  background: rgba(238, 238, 238, 0.1);
+  backdrop-filter: blur(84.82);
+}
+
+.content {
+  padding: 3rem 0;
+  border-bottom: 1px solid #c6d5e9;
+}
+
+.content img {
+  width: 12rem;
+}
+
+.socials > p {
+  margin-bottom: 0;
+}
+
+.copyright {
+  padding: 12px;
+  font-weight: 400;
+}
+
+.copyright p {
+  margin-bottom: 0;
+  font-size: 0.65rem;
+}
+
+.copyright p span {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+    padding: 4rem 5rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  content {
+    padding: 3rem 2rem 1rem;
+  }
+}

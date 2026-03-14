@@ -1,0 +1,147 @@
+.transparentHeader {
+  background: transparent !important;
+  filter: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-wrap: nowrap;
+  background: #fff;
+  transition: background 7000 linear;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
+}
+
+.wrapper {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.wrapper a {
+  color: var(--default-text-color);
+}
+
+.wrapper a:hover {
+  color: var(--primary-text-color);
+}
+
+.imgContainer {
+  width: 180px;
+}
+
+.imgContainer img {
+  width: 100%;
+}
+
+.nav {
+  display: none;
+  gap: 80px;
+}
+
+.mobNav {
+  padding: 20px 0;
+}
+
+.mobNav .nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.mobNav .nav ul {
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.nav ul {
+  gap: 40px;
+  margin: 0;
+  align-items: center;
+}
+
+.activeLink a {
+  color: var(--primary-text-color);
+}
+
+.primaryBtn {
+  background: #091f18;
+  border-radius: 8px;
+  width: fit-content;
+  font-size: 12px;
+}
+
+.primaryBtn span small {
+  padding: 4px 0;
+  font-size: inherit;
+}
+
+.primaryBtn a {
+  color: #fff;
+  padding: 0 10px;
+}
+
+.primaryBtn:hover {
+  background: var(--primary-text-color);
+}
+
+.primaryBtn a:hover {
+  color: #fff;
+}
+
+.menuBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.menuBar {
+  height: 3px;
+  width: 20px;
+  background: var(--default-text-color);
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.3s linear;
+}
+
+.navOpen .menuBar1 {
+  transform: rotate(45deg);
+  top: 5px;
+  transition-delay: 0.1s;
+}
+.navOpen .menuBar2 {
+  width: 0;
+}
+.navOpen .menuBar3 {
+  transform: rotate(-45deg);
+  bottom: 5px;
+  transition-delay: 0.1s;
+}
+
+@media screen and (min-width: 330px) {
+  .mobNav .nav {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .nav {
+    display: flex;
+  }
+  .menuBtn {
+    display: none;
+  }
+  .imgContainer {
+    width: 240px;
+  }
+}

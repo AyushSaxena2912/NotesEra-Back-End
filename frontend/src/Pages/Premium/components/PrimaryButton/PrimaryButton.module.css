@@ -1,0 +1,17 @@
+.button {
+  background: var(--primary-btn-color);
+  color: var(--light-color);
+  text-wrap: nowrap;
+  border: none;
+}
+
+.button span small {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0 1px 32px 0 rgba(115, 205, 255, 0.4);
+  -webkit-box-shadow: 0 1px 32px 0 rgba(115, 205, 255, 0.4);
+}

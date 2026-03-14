@@ -1,0 +1,51 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.wrapper {
+  position: relative;
+  padding: 10%;
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 12px;
+  gap: 15%;
+}
+
+.wrapper > img {
+  width: 275px;
+  animation: bounce 5s ease-in-out infinite;
+}
+
+.content {
+  width: fit-content;
+  margin-top: 8%;
+}
+
+.content h1 {
+  color: var(--light-blue-color);
+  font-weight: 800;
+  line-height: normal;
+  width: fit-content;
+}
+
+.content p {
+  color: var(--light-color);
+  font-size: 1.2rem;
+  line-height: normal;
+}
+
+@media screen and (min-width: 992px) {
+  .wrapper {
+    padding: 3rem 10%;
+  }
+  .content {
+    margin-top: 0;
+  }
+}

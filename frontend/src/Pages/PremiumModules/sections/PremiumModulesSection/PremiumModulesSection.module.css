@@ -1,0 +1,18 @@
+.container {
+  --heading-1-color: #1a906b;
+  margin-bottom: 100px;
+}
+
+.container h1 {
+  color: var(--heading-1-color);
+}
+
+.container h2 {
+  margin-bottom: 15px;
+}
+
+.container p {
+  color: var(--para-color);
+  font-size: 18px;
+  width: 85%;
+}

@@ -1,0 +1,29 @@
+.container h1,
+.container h2,
+.container p {
+  text-align: start;
+  padding: 0;
+  margin: 0;
+}
+
+.container h1 {
+  color: var(--heading-1-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.container h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.container p {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+@media screen and (min-width: 500px) {
+  .container h2 {
+    font-size: 32px;
+  }
+}

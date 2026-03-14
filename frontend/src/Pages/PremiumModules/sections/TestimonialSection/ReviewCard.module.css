@@ -1,0 +1,46 @@
+.card {
+  --background-color: #f9fafb;
+  width: 95%;
+  min-height: 260px;
+  background: var(--background-color);
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.imgContainer {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.ratings {
+  color: #ffa033;
+}
+
+.card .userContainer strong {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card .userContainer p {
+  font-size: 14px;
+}
+
+.card .reviewContainer p {
+  text-align: center;
+}
+
+.card .reviewContainer .shortReview {
+  font-weight: 600;
+}
+
+.card .reviewContainer .review {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 390px) {
+  .card {
+    width: 360px;
+  }
+}

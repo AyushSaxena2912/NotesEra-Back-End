@@ -1,0 +1,11 @@
+.inactiveCard {
+  transform: scale(0.75);
+}
+
+.activeCard {
+  transform: scale(1);
+}
+
+.activeCard > div {
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 60%));
+}

@@ -1,0 +1,19 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  width: fit-content;
+  color: var(--primary-f-color);
+  animation: spin 1.2s linear infinite;
+  margin: 0 auto;
+}
+
+.spinner svg {
+  filter: blur(3px);
+}

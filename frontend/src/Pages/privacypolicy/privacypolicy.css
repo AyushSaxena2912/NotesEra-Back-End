@@ -1,0 +1,14 @@
+.privacypolicy{
+    background-color: rgb(212, 210, 210);
+    width: 80vw;
+    height:auto;
+    margin: auto;
+    padding-left: 2%;
+    border-radius: 10px;
+}
+.privacyheader{
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    display: flex;
+}

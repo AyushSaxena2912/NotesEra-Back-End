@@ -1,0 +1,139 @@
+.user-dashboard1 {
+  padding: 20px;
+  overflow-x: auto; /* Enable horizontal scrolling for small screens */
+}
+
+h2 {
+  font-size: 24px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.addData{
+  border: 1px solid #007bff;
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.addData:hover{
+  background-color: #007bff;
+  color: aliceblue;
+}
+
+.edit-button1,
+.delete-button1 {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.filters1 {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.data-card-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between cards as needed */
+  justify-content: flex-start;
+}
+
+.data-card1 {
+  width: 300px; /* Adjust the width of each card */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.card-header1 {
+  background-color: #3797fd;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-body1 {
+  padding: 10px;
+}
+
+.card-actions1 {
+  display: flex;
+  padding: 10px;
+  align-items: center; /* Center the action buttons vertically */
+}
+
+.edit-button1,
+.delete-button1 {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  font-weight:500;
+}
+
+.edit-button1 {
+  font-size: 20px;
+  padding: 5px;
+  background-color: #28a745; /* Green color, you can change this */
+  margin-right: 10px;
+}
+
+.delete-button1 {
+  font-size: 20px;
+  padding: 5px 10px;
+  background-color: #dc3545; /* Red color, you can change this */
+}
+
+/* Security */
+.login-form2 {
+  margin-top: 100px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Input Field */
+.security-key-input1 {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Submit Button */
+.submit-button10 {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button10:hover {
+  background-color: #0056b3;
+}

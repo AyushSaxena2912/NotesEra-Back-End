@@ -1,0 +1,7 @@
+.gallary {
+    height: max-content;
+    width:90vw;
+    gap:10px;
+    display: flex;
+    flex-wrap:wrap;
+}

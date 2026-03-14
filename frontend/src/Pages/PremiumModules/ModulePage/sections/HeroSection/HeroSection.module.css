@@ -1,0 +1,110 @@
+.section {
+  position: relative;
+  padding-top: 130px;
+  padding-bottom: 140px;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.mainContainer {
+  flex-direction: column;
+}
+
+.primaryBtnWrapper {
+  flex-direction: column;
+}
+
+.section .wrapper .textContainer h1 {
+  color: var(--default-text-color);
+  font-size: 36px;
+}
+
+.section .wrapper .textContainer h2 {
+  color: #22b286;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section .wrapper .textContainer h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.section .wrapper .textContainer p {
+  line-height: 130%;
+  font-weight: 100;
+}
+
+.section .wrapper .textContainer strong {
+  color: #000;
+  font-weight: 800;
+}
+
+.loadingModalWrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #00000080;
+}
+
+.loadingModal {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 100px;
+  height: 100px;
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popupContent {
+  z-index: 1;
+}
+
+.copyBtn:hover {
+  transform: scale(1.2);
+}
+
+.copyBtn:active {
+  transform: scale(1);
+}
+
+@media screen and (min-width: 540px) {
+  .primaryBtnWrapper {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .mainContainer {
+    flex-direction: row;
+  }
+  .previewContainer {
+    width: 40%;
+  }
+
+  .textContainer {
+    width: 50%;
+  }
+}

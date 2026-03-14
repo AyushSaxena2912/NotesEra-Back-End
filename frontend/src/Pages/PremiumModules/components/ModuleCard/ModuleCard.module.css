@@ -1,0 +1,89 @@
+.card,
+.card:hover,
+.card:active,
+.card:visited {
+  color: var(--para-color);
+}
+
+.card {
+  --price-color: #3fc89e !important;
+  width: 100%;
+  height: 640px;
+  margin: 0 auto;
+  padding: 16px 16px 20px;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 325px;
+  height: 440px;
+}
+
+.card h2 span {
+  font-size: 16px;
+}
+
+.card h2 svg {
+  font-size: 14px;
+  line-height: 100%;
+  transform: translateY(3px);
+}
+
+.card .textContainer .para {
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.card .textContainer .priceContainer p {
+  font-size: 20px;
+  font-weight: 700;
+  width: fit-content;
+}
+
+.card .textContainer .priceContainer .oldPrice div {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 45%;
+  background: var(--para-color);
+}
+
+.card .textContainer .price {
+  color: var(--price-color);
+}
+
+.card .textContainer p.totalRatingsPara {
+  font-size: 14px;
+}
+
+.card .textContainer .ratingsContainer {
+  font-size: 12px;
+}
+
+.card .textContainer p.ratingPara {
+  font-size: 14px;
+  transform: translateY(2px);
+  color: var(--price-color);
+}
+
+.ratings {
+  color: #ffa033;
+}
+
+@media screen and (min-width: 430px) {
+  .card {
+    width: 364px;
+  }
+  .card h2 span {
+    font-size: 20px;
+  }
+  .card h2 svg {
+    font-size: 16px;
+    transform: translateY(5px);
+  }
+  .card .textContainer .para {
+    font-size: 16px;
+  }
+}
