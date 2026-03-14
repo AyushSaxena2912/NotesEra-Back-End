@@ -18,6 +18,7 @@ app.use(
       // "http://localhost:3001",
       // "http://127.0.0.1:3001",
       "https://notesera.in",
+      "https://notes-era-back-end.vercel.app",
     ],
     methods: ["GET", "POST"],
     credentials: true,
